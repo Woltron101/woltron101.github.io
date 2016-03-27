@@ -944,30 +944,26 @@
 </h3>
 <div class="row">
 <div class="col-md-12">
-<form action="http://formspree.io/woltron101@gmail.com" class="main_form" novalidate target="_blank" method="post">
+<form action="http://formspree.io/woltron101@gmail.com" class="main_form" novalidate target="_blank" method="post" id="form2">
 <div class="col-sm-6">
 	<div class="form-group">
-		<label class="control-label" for="InputName">Имя</label>
-		<input class="form-control" id="InputName" placeholder="Имя" type="text" data-validation-required-message="Вы не ввели имя" required name="name"></div>
-		<span class="help-block text-danger"></span>		
-	<div class="form-group">
-		<label class="control-label" for="InputEmail">Email address</label>
-		<input class="form-control" id="InputEmail" placeholder="Еmail" type="email" data-validation-required-message="Вы не ввели имя" required name="email"></div>
 		<span class="help-block text-danger"></span>
-	<div class="form-group">
-		<label class="control-label" for="InputSkype">Skype</label>
-		<input class="form-control" id="InputSkype" placeholder="Skype" type="text" data-validation-required-message="Вы не ввели имя" required name="skype"></div>
-		<span class="help-block text-danger"></span>		
-	<div class="form-group">
-		<label class="control-label" for="InputFile">Прикрепите .psd и(или) ТЗ</label>
-		<input class="form-control" id="InputFile" type="file" data-validation-required-message="Вы не ввели имя" required name="file"></div>
-		<span class="help-block text-danger"></span>		
+		<input class="form-control" id="InputName" placeholder="Имя" type="text" data-validation-required-message="Вы не ввели имя" required name="name">
+	</div>
 </div>
 <div class="col-sm-6">
 	<div class="form-group">
-		<label class="control-label" for="message">Сообщение</label>
-		<textarea class="form-control" name="message" id="message" cols="30" rows="10"></textarea>
+		<span class="help-block text-danger"></span>
+		<input class="form-control" id="InputEmail" placeholder="Еmail" type="email" data-validation-required-message="Вы не ввели email" required name="email">		
 	</div>
+</div>
+
+<div class="col-sm-12">
+<div class="form-group">
+
+	<label class="control-label" for="message">Сообщение</label>
+	<textarea class="form-control" name="message" id="message" cols="30" rows="10"></textarea>
+</div>
 </div>
 <button type="submit" class="btn btn-default button">Заказать</button>
 </form>
@@ -982,51 +978,57 @@
 <p>Copyright &copy; 2016 Все права защищены</p>
 </div>
 </div>
-</div><!-- 
-<section id="contacts" class="s_contacts bg_light">
-<div class="section_content">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-sm-6">
-					<form action="http://formspree.io/agragregra@ya.ru" class="main_form" novalidate target="_blank" method="post">
-						<label class="form-group">
-							<span class="color_element">*</span> Ваше имя:
-							<input type="text" name="name" placeholder="Ваше имя" data-validation-required-message="Вы не ввели имя" required />
-							<span class="help-block text-danger"></span>
-						</label>
-						<label class="form-group">
-							<span class="color_element">*</span> Ваш E-mail:
-							<input type="email" name="email" placeholder="Ваш E-mail" data-validation-required-message="Не корректно введен E-mail" required />
-							<span class="help-block text-danger"></span>
-						</label>
-						<label class="form-group">
-							<span class="color_element">*</span> Ваше сообщение:
-							<textarea name="message" placeholder="Ваше сообщение" data-validation-required-message="Вы не ввели сообщение" required></textarea>
-							<span class="help-block text-danger"></span>
-						</label>
-						<button>Отправить</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> -->
+</div>
 <div class="hidden">
 <div id="popup-form" class="container form section">
-<form>
+<h3 class="section-hd">
+Закажите разработку сайта
+<br>
+<span>
+также вы можете задать любые вопросы или заказать бесплатную консультацию
+</span>
+</h3>
+<form action="http://formspree.io/woltron101@gmail.com" class="main_form" novalidate target="_blank" method="post" id="form1">
+<div class="col-sm-6">
+	<div class="form-group">
+		<span class="help-block text-danger"></span>
+		<input class="form-control" id="InputName1" placeholder="Имя" type="text" data-validation-required-message="Вы не ввели имя" required name="name">
+	</div>
+</div>
+<div class="col-sm-6">
+	<div class="form-group">
+		<span class="help-block text-danger"></span>
+		<input class="form-control" id="InputEmail1" placeholder="Еmail" type="email" data-validation-required-message="Вы не ввели email" required name="email">		
+	</div>
+</div>
+
+<div class="col-sm-12">
+<div class="form-group">
+
+	<label class="control-label" for="message">Сообщение</label>
+	<textarea class="form-control" name="message" id="message1" cols="30" rows="10"></textarea>
+</div>
+</div>
+<button type="submit" class="btn btn-default button">Заказать</button>
+</form>
+<!-- <form>
 <div class="col-md-6">
 <div class="form-group">
 	<label class="control-label" for="InputName1">Имя</label>
-	<input class="form-control" id="InputName1" placeholder="Имя" type="text"></div>
+	<input class="form-control" id="InputName1" placeholder="Имя" type="text">
+</div>
 <div class="form-group">
 	<label class="control-label" for="InputEmail1">Email address</label>
-	<input class="form-control" id="InputEmail1" placeholder="Еmail" type="email"></div>
+	<input class="form-control" id="InputEmail1" placeholder="Еmail" type="email">
+</div>
 <div class="form-group">
 	<label class="control-label" for="InputSkype1">Skype</label>
-	<input class="form-control" id="InputSkype1" placeholder="Skype" type="text"></div>
+	<input class="form-control" id="InputSkype1" placeholder="Skype" type="text">
+</div>
 <div class="form-group">
 	<label class="control-label" for="InputFile1">Прикрепите .psd и(или) ТЗ</label>
-	<input class="form-control" id="InputFile1" type="file"></div>
+	<input class="form-control" id="InputFile1" type="file">
+</div>
 </div>
 <div class="col-md-6">
 <div class="form-group">
@@ -1035,7 +1037,7 @@
 </div>
 </div>
 <button type="submit" class="btn btn-default button">Заказать</button>
-</form>
+</form> -->
 </div>
 </div>
 
@@ -1152,6 +1154,19 @@
 	// 	type:"inline",
 	// 	midClick: true
 	// });
+	// $('input[type=file]').next().css("color", "#999");
+	// $("[type=file]").on("change", function(){
+	//   // Name of file and placeholder
+	//   var file = this.files[0].name;
+	//   var dflt = $(this).attr("placeholder");
+	//   if($(this).val()!=""){
+	//     $(this).next().text(file);
+	//     $(this).next().css("color", "#555");
+	//   } else {
+	//     $(this).next().text(dflt);	    
+	//     $(this).next().css("color", "#999");	 
+	//   }
+	// });
 	$(".link-p").magnificPopup({
 		type:"inline",
 		midClick: true
@@ -1160,7 +1175,7 @@
 		type:"image"
 	});
 	// $(".section.about h1").animated("fadeInUp", "fadeOutDown");
-	$(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+	$(function () { $("input,select,textarea").not("[type=submit], input[type=file]").jqBootstrapValidation(); } );
 	$(".featch a:nth-child(even) .col-md-12").animated("fadeInUp", "fadeOutDown");
 	$(".featch a:nth-child(odd) .col-md-12").animated("fadeInUp", "fadeOutDown");
 	$(".section-hd").animated("swing", "fadeOutDown");
@@ -1174,8 +1189,10 @@
 			$(".navbar-toggle.collapsed[aria-expanded='false']").removeClass("collapsed");
 			$(".navbar-collapse.collapse.in").removeClass("in");
 		}
-	})
-
+	});
+	$('#InputName').change(function(){
+		$('.help-block').text('');
+	});
 
 	document.addEventListener('DOMContentLoaded', function() {
 
@@ -1200,5 +1217,6 @@
 		$('.var .img-wrap').height($('.var .img-wrap').width());
 		$('section.portfolio .item').height($('img[src="img/11.jpg"]').height());
 	});
+
 </script></body>
 </html>

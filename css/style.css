@@ -175,9 +175,7 @@ section.portfolio .item { max-height: 286px; overflow: hidden; }
 
 .form.section .container { background-color: transparent; margin-bottom: 0; }
 
-.form.section .col-sm-6 { margin-bottom: 50px; }
-
-.form.section .button { position: relative; display: block; margin: 0 auto; width: 190px; height: 40px; line-height: 40px; color: #fff; text-align: center; font-weight: bold; font-size: 20px; text-decoration: none; border-bottom: 5px solid #398E31 !important; background: #74D46B; background: linear-gradient(to top, #398E31 0%, #74D46B 100%); border-radius: 3px; border-bottom-left-radius: 7px 14px; border-bottom-right-radius: 7px 14px; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4); text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); box-sizing: content-box; outline: none; }
+.form.section .button { position: relative; display: block; margin: 0 auto; width: 190px; height: 40px; line-height: 40px; color: #fff; text-align: center; font-weight: bold; font-size: 20px; text-decoration: none; border-bottom: 5px solid #398E31 !important; background: #74D46B; background: linear-gradient(to top, #398E31 0%, #74D46B 100%); border-radius: 3px; border-bottom-left-radius: 7px 14px; border-bottom-right-radius: 7px 14px; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4); text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); box-sizing: content-box; outline: none; margin-top: 50px; }
 
 .form.section .button:hover { background: #398E31; background: linear-gradient(to top, #74D46B 0%, #398E31 100%); }
 
@@ -190,6 +188,14 @@ section.portfolio .item { max-height: 286px; overflow: hidden; }
 .form.section .button:active:before { border: none; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset; width: 214px; }
 
 .form.section .btn-default { border-color: transparent; }
+
+.form.section input[type=file] { display: none; }
+
+.form.section input[type=file] + label { font-weight: normal; }
+
+.form.section .help-block { position: absolute; top: -100%; color: #fff; font-weight: bold; }
+
+.form.section .help-block ul { list-style-type: none; padding: 0; }
 
 .container.form.section { background: none; }
 

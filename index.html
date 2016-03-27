@@ -944,20 +944,24 @@
 </h3>
 <div class="row">
 <div class="col-md-12">
-<form >
+<form action="http://formspree.io/woltron101@gmail.c" class="main_form" novalidate target="_blank" method="post">
 <div class="col-sm-6">
 	<div class="form-group">
 		<label class="control-label" for="InputName">Имя</label>
 		<input class="form-control" id="InputName" placeholder="Имя" type="text" data-validation-required-message="Вы не ввели имя" required name="name"></div>
+		<span class="help-block text-danger"></span>		
 	<div class="form-group">
 		<label class="control-label" for="InputEmail">Email address</label>
-		<input class="form-control" id="InputEmail" placeholder="Еmail" type="email" data-validation-required-message="Вы не ввели имя" required name="Еmai"></div>
+		<input class="form-control" id="InputEmail" placeholder="Еmail" type="email" data-validation-required-message="Вы не ввели имя" required name="email"></div>
+		<span class="help-block text-danger"></span>
 	<div class="form-group">
 		<label class="control-label" for="InputSkype">Skype</label>
-		<input class="form-control" id="InputSkype" placeholder="Skype" type="text" data-validation-required-message="Вы не ввели имя" required name="Skyp"></div>
+		<input class="form-control" id="InputSkype" placeholder="Skype" type="text" data-validation-required-message="Вы не ввели имя" required name="skype"></div>
+		<span class="help-block text-danger"></span>		
 	<div class="form-group">
 		<label class="control-label" for="InputFile">Прикрепите .psd и(или) ТЗ</label>
 		<input class="form-control" id="InputFile" type="file" data-validation-required-message="Вы не ввели имя" required name="file"></div>
+		<span class="help-block text-danger"></span>		
 </div>
 <div class="col-sm-6">
 	<div class="form-group">
@@ -978,7 +982,35 @@
 <p>Copyright &copy; 2016 Все права защищены</p>
 </div>
 </div>
-</div>
+</div><!-- 
+<section id="contacts" class="s_contacts bg_light">
+<div class="section_content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<form action="http://formspree.io/agragregra@ya.ru" class="main_form" novalidate target="_blank" method="post">
+						<label class="form-group">
+							<span class="color_element">*</span> Ваше имя:
+							<input type="text" name="name" placeholder="Ваше имя" data-validation-required-message="Вы не ввели имя" required />
+							<span class="help-block text-danger"></span>
+						</label>
+						<label class="form-group">
+							<span class="color_element">*</span> Ваш E-mail:
+							<input type="email" name="email" placeholder="Ваш E-mail" data-validation-required-message="Не корректно введен E-mail" required />
+							<span class="help-block text-danger"></span>
+						</label>
+						<label class="form-group">
+							<span class="color_element">*</span> Ваше сообщение:
+							<textarea name="message" placeholder="Ваше сообщение" data-validation-required-message="Вы не ввели сообщение" required></textarea>
+							<span class="help-block text-danger"></span>
+						</label>
+						<button>Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
 <div class="hidden">
 <div id="popup-form" class="container form section">
 <form>

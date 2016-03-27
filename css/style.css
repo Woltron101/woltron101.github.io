@@ -1,8 +1,6 @@
 @import url("../owl/assets/owl.carousel.css");
 @import url("magnific-popup.css");
 @import url("animate.css");
-@import url("_media-queries.scss");
-@import url("m.css");
 body { font-family: "Open sans" !important; background: #74D46B url("../img/bg.png") 0 0 repeat; min-width: 320px; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Open sans" !important; }

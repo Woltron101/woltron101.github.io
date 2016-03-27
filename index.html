@@ -1055,10 +1055,11 @@
 
 <script>
 	$(document).ready(function () {
-
+		console.log($('img[src="img/11.jpg"]').height());
+		
 		$('.about').height($(window).height());
 		$('.var .img-wrap').height($('.var .img-wrap').width());
-		$('section.portfolio .item').height($('img[src="img/11.jpg"]').height());
+		// if ($(window).width()<1920) $('section.portfolio .item').height($('img[src="img/11.jpg"]').height());
 		$('.parallax-window').parallax({imageSrc: 'img/headbg.jpg'});
 		$(".owl-carousel").owlCarousel({
 			loop: true,

@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Open sans" 
 
 .featch .col-md-12:nth-child(odd) h3 { right: 0; }
 
-section.portfolio .item { max-height: 286px; overflow: hidden; }
+section.portfolio .item { height: 286px; overflow: hidden; }
 
 .owl-prev, .owl-next { width: 50px; height: 50px; position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 

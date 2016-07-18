@@ -1,0 +1,200 @@
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 999px) {
+    header .callback a:nth-child(1),
+    footer .callback a:nth-child(1) {
+        font: 28px "AeroMaticsBoldItalic", sans-serif;
+    }
+    header .callback a:nth-child(2),
+    footer .callback a:nth-child(2) {
+        font: 14px "PTSansRegular", sans-serif;
+    }
+    header h1,
+    footer h1 {
+        padding-top: 10px;
+        font: 17px "PTSansBold", sans-serif;
+        color: #fff;
+    }
+    header .callback,
+    footer .callback {
+        margin-top: -7px;
+    }
+    .biz .item_title h3 {
+        font: 19px "AeroMaticsBoldItalic", sans-serif;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title h2 {
+        font: 40px "AeroMaticsBoldItalic", sans-serif;
+        margin-bottom: 30px;
+    }
+    header .callback,
+    footer .callback {
+        text-align: center;
+    }
+    header img,
+    footer img {
+        max-width: 200px;
+    }
+    header .callback a:nth-child(2),
+    footer .callback a:nth-child(2) {
+        display: inline-block;
+    }
+    header .callback,
+    footer .callback {
+        margin-top: -4px;
+    }
+    .reviews .reviews_item .col-xs-2 {
+        float: none;
+        margin-left: 15px;
+    }
+    .with_us .title_two {
+        margin-top: 60px;
+    }
+    .price .title .block {
+        margin-top: 15px;
+    }
+    .form_id input {
+        margin-bottom: 20px;
+    }
+    .with_us .item_with {
+        border: 1px solid #4b484b!important;
+        margin-bottom: 10px;
+    }
+    button.prev {
+        position: absolute;
+        top: 23%;
+        left: 2%;
+        background: #f7f7f7;
+        padding: 10px 0;
+    }
+    button.next {
+        position: absolute;
+        top: 23%;
+        right: 2%;
+        background: #f7f7f7;
+        padding: 10px 0;
+    }
+    .wrapper_slider .tabs:before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {}
+
+@media screen and (max-width: 550px) {
+    .shapka h2 {
+        font: 43px "AeroMaticsBoldItalic", sans-serif;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .wrapper_table .table-cell {
+        display: block;
+        border: 2px solid #4d4b4b!important;
+        margin-bottom: 50px;
+    }
+    .wrapper_table .table-cell:last-child {
+        margin-bottom: 0;
+    }
+    .reviews h5 {
+        font: 19px "AeroMaticsBoldItalic", sans-serif;
+    }
+    .biz .title .red:before {
+        width: 95%;
+        left: 2.5%;
+    }
+    .shapka p:before {
+        display: none;
+    }
+    .wrapper_slider li {
+        margin: 0 20px;
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header .callback,
+    footer .callback {
+        margin-top: 0;
+        float: none;
+        width: 100%;
+    }
+    .container_logo {
+        float: none;
+        margin: 0 auto 20px;
+    }
+    header .logo:after,
+    footer .logo:after {
+        display: none;
+    }
+    .reviews .review {
+        background: #f1f1f1;
+        padding: 15px 25px 60px 25px;
+    }
+    .title h2 {
+        font: 35px "AeroMaticsBoldItalic", sans-serif;
+        margin-bottom: 30px;
+    }
+    header .menu,
+    footer .menu {
+        margin-bottom: 20px;
+    }
+    footer .menu {
+        margin-bottom: 0;
+    }
+    .shapka_bottom {
+        padding-bottom: 80px;
+    }
+    .shapka h2 {
+        font: 33px "AeroMaticsBoldItalic", sans-serif;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .shapka p {
+        font: 15px "PTSansRegular", sans-serif;
+        color: #d9d9d9;
+        text-align: center;
+        position: relative;
+        margin-bottom: 20px;
+        z-index: 1;
+    }
+    header,
+    footer {
+        padding-top: 15px;
+    }
+    #modal_form {
+        width: 100%;
+        text-align: center;
+        padding: 35px 20px 40px;
+    }
+    #thanks {
+        width: 100%;
+    }
+    #thanks .skew {
+        width: 80%;
+    }
+    .fancybox-close {
+        background-size: cover;
+    }
+    button.prev {
+        display: none!important;
+    }
+    button.next {
+        display: none!important;
+    }
+    .wrapper_slider li {
+        margin: 0 5px;
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .price .a_system {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) {}

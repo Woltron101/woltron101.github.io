@@ -1,0 +1,419 @@
+@media screen and (max-width: 1200px) {
+    nav li a {
+        padding: 8px 15px;
+    }
+    .gallery h3 span {
+        font-size: 27px;
+        text-transform: uppercase;
+    }
+    .popap_form img {
+        position: absolute;
+        right: -153px;
+        top: 61px;
+        width: 400px;
+    }
+    .popap_form a {
+        position: relative;
+        z-index: 1;
+    }
+    /*.wrapper_reviews .reviews_container {
+        min-height: 1020px;
+        position: relative;
+    }*/
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper_reviews .reviews_container {
+        min-height: 1500px;
+        position: relative;
+    }
+    .popap_gallery {
+        width: 100%;
+    }
+    .header_bottom .popap_callback a {
+        font-size: 14px;
+    }
+    nav li a {
+        padding: 8px 17px;
+    }
+    nav .callback {
+        display: none;
+    }
+    a.logo {
+        margin-top: 0;
+        display: block;
+    }
+    .header_bottom .popap_callback {
+        padding-left: 40px;
+        margin-top: 43px;
+    }
+    .header_bottom .adres li {
+        font-size: 16px;
+        margin-bottom: 7px;
+        padding-left: 30px;
+    }
+    .shapka h1 {
+        font-size: 43px;
+    }
+    .shapka h1 span {
+        font-size: 43px;
+        display: block;
+    }
+    .popap_form img {
+        position: absolute;
+        right: -81px;
+        top: 98px;
+        width: 300px;
+    }
+    footer .header_bottom .adres li:last-child {
+        margin-top: 35px;
+    }
+    .big_slick .slick-dots li {
+        margin: 20px 3px;
+        width: 45px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .popap_gallery .col-md-4 {
+        width: 100%;
+        height: auto;
+    }
+    .popap_gallery .container {
+        width: 100%;
+    }
+    .popap_form img {
+        display: none;
+    }
+    .popap_form {
+        text-align: center;
+    }
+    .popap_form a {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 740px) {
+    .advantages .wrapper_item {
+        width: 220px;
+        display: inline-block;
+        padding: 30px 15px 15px;
+        border: 1px solid #ededed;
+        vertical-align: top;
+        margin: 0 .8% 20px;
+        height: 330px;
+        position: relative;
+        background: #fff;
+    }
+    .advantages .wrapper_item:hover .item {
+        margin-top: -100px;
+        max-height: 385px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+    .advantages .wrapper_item {
+        padding: 30px 15px 15px;
+        margin: 0 2% 20px!important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper_reviews .review:after,
+    .wrapper_reviews .review:before {
+        display: none;
+    }
+    .reviews_slider {
+        display: block;
+    }
+    .reviews_container {
+        display: none;
+    }
+    .header_bottom {
+        padding: 5px 0 20px;
+    }
+    .shapka form:after,
+    #inline_form form:after {
+        display: none;
+    }
+    .wrapper_reviews .container {
+        padding: 0 30px;
+    }
+    .team .slider_team {
+        padding: 0 50px;
+    }
+    .slick-next {
+        right: 0px;
+    }
+    .slick-prev {
+        left: 0px;
+    }
+    .header_bottom .adres {
+        margin: 20px 0 10px;
+    }
+    .shapka h1 {
+        font-size: 43px;
+        text-align: center;
+    }
+    .shapka h1 span {
+        font-size: 43px;
+    }
+    .shapka h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .shapka {
+        padding: 20px 0 60px;
+    }
+    .gallery {
+        padding: 50px 0 190px;
+    }
+    .popap_form {
+        margin-bottom: 10px;
+    }
+    .team {
+        padding-bottom: 40px;
+    }
+    #map h3 {
+        font-size: 30px;
+    }
+    #map .content {
+        width: 400px;
+    }
+    .header_bottom .popap_callback {
+        padding-left: 25px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .wrapper_reviews .review a {
+        margin-top: 10px;
+    }
+    .wrapper_reviews .review {
+        margin: 0;
+    }
+    /* .advantages_mobile_slider {
+        display :block;
+    }*/
+    .advantages .advantages_toggle_button_slider {
+        margin: 0 auto;
+        display: block;
+    }
+    .advantages .container {
+        padding: 0;
+    }
+    .advantages .title {
+        margin-bottom: 40px;
+    }
+    .advantages_mobile_slider {
+        display: block;
+    }
+    .advantages_table_item {
+        display: none;
+    }
+    .item_container {
+      height: 430px!important;
+    max-height: 450px;
+    min-height: 398px;
+    }
+    .advantages .wrapper_item {
+        width: 320px;
+        padding: 45px 15px 30px;
+        border: 1px solid #ededed;
+        vertical-align: top;
+        margin: 60px 0;
+        height: 330px;
+        position: relative;
+        background: #fff;
+    }
+    button.toggle {
+        display: block;
+    }
+    nav {
+        text-align: center;
+        padding-bottom: 0;
+    }
+    .nav {
+        margin-top: 10px;
+        display: none;
+    }
+    nav li {
+        display: inline-block;
+        position: relative;
+        margin: 10px 20%;
+    }
+    nav li a:before,
+    nav li a:after {
+        display: none;
+    }
+    nav ul {
+        display: block;
+    }
+    nav li a {
+        font-size: 20px;
+        text-align: center;
+        display: block;
+    }
+    .container_button {
+        padding-bottom: 7px;
+        border-bottom: 1px solid #fff;
+    }
+    .title h2 span {
+        font-size: 30px;
+    }
+    .title h2 {
+        font-size: 30px;
+    }
+    .title h2:after,
+    .title h2:before {
+        top: -5px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .gallery .slider_bot {
+        margin-bottom: 46px;
+    }
+    .header_bottom .adres li {
+        font-size: 14.5px;
+    }
+}
+@media screen and (max-width: 600px) {
+ #map .content {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 550px) {
+    header .header_bottom {
+        display: none;
+    }
+    .title h2:after,
+    .title h2:before {
+        display: none;
+    }
+    .header_bottom {
+        text-align: center;
+    }
+    .header_bottom .col-sm-4 {
+        display: inline-block;
+        float: none;
+        width: auto;
+        margin: 0 10%;
+    }
+    body .header_bottom .adres li {
+        background: none!important;
+        padding: 0;
+    }
+    .wrapper_reviews .review .img {
+        float: none;
+        width: 40%;
+        margin-top: 5px;
+    }
+    .wrapper_reviews .review .text {
+        float: left;
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .advantages .container>img {
+        display: none;
+    }
+   
+    .shapka h1 {
+        font-size: 40px;
+    }
+    .shapka h1 span {
+        font-size: 40px;
+    }
+    .popap_form h3 {
+        font-size: 23px;
+    }
+    .popap_form {
+        padding: 40px 10px 50px;
+    }
+    #inline_form {
+        width: 100%;
+    }
+    #inline_form form {
+        padding: 35px 10px;
+    }
+    .popap_gallery {
+        background: #fff;
+        padding: 30px 0px;
+    }
+     #map .content {
+        padding: 40px 10px 5px;
+        position: static;
+    }
+    #map {
+        height: auto!important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .advantages .wrapper_item {
+        width: calc(100% - 20px);
+        padding: 45px 15px 30px;
+        border: 1px solid #ededed;
+        vertical-align: top;
+        margin: 60px auto;
+        height: 330px;
+        position: relative;
+        background: #fff;
+    }
+    .team .slider_team {
+        padding: 0 10px;
+    }
+    .ymaps-2-1-39-map-bg-ru {
+        display: none!important;
+    }
+    .popap_form a {
+        width: 100%;
+    }
+    .shapka h1 {
+        font-size: 30px;
+    }
+    .shapka h1 span {
+        font-size: 30px;
+    }
+    .shapka h2 {
+        font-size: 18px;
+        padding-right: 0px;
+    }
+    .shapka .col-xs-10 {
+        width: 100%;
+        margin: 0;
+    }
+    .advantages button {
+        width: 100%;
+    }
+    .wrapper_reviews .review {
+        padding: 45px 10px 40px;
+    }
+    .wrapper_reviews a {
+        width: 100%;
+    }
+    .wrapper_reviews .container {
+        padding: 0 10px;
+    }
+    .wrapper_reviews .review:after,
+    .wrapper_reviews .review:before {
+        display: none;
+    }
+   
+}
+
+@media screen and (max-width: 380px) {
+    body #map {
+        height: auto!important;
+    }
+}
+
+@media screen and (min-width: 761px) {
+    body nav .nav {
+        display: inline-block!important;
+    }
+}

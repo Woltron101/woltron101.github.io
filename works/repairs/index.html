@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="dist/main.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <title>Ремонт квартир</title>
+</head>
+
+<body>
+    <header>
+        <nav class="header-menu">
+            <div class="container">
+                <div class="container_button">
+                    <button class="toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                </div>
+                <ul class="nav">
+                    <li><a data-rel="PageScroll" data-ps2id-offset="0" href="#advantages">Преимущества</a></li>
+                    <li><a data-rel="PageScroll" data-ps2id-offset="0" href="#gallery">Наши работы</a></li>
+                    <li><a data-rel="PageScroll" data-ps2id-offset="0" href="#team">Наша команда</a></li>
+                    <li><a data-rel="PageScroll" data-ps2id-offset="0" href="#reviews">Отзывы</a></li>
+                    <li><a data-rel="PageScroll" data-ps2id-offset="0" href="#map">Контакты</a></li>
+                </ul>
+                <a href="callto:+2(458)320-33-60" class="callback ">+ 2 (458) 320-33-60</a>
+            </div>
+        </nav>
+        <div class="header_bottom">
+            <div class="container">
+                <div class="col-md-3 col-sm-4 col-xs-7">
+                    <div class="row">
+                        <a href="" class="logo clearfix">
+                            <img src="img/logo.png" alt="">
+                            <h2>Ремонт <span>квартир</span></h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-1 col-xs-5 col-xs-offset-0">
+                    <div class="row">
+                        <div class="adres">
+                            <ul>
+                                <li>г. Название, ул. Название 7, оф. 15</li>
+                                <li>remont.prosto@yandex.ru</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 popap_callback col-xs-8 col-sm-offset-0 col-xs-offset-2">
+                    <div class="row">
+                        <a class="inline_fancybox button_hover" href="#inline_form">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shapka">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-6 col-xs-12">
+                        <h1>качественный <span>ремонт кваритир</span></h1>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua.</h2>
+                    </div>
+                    <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                        <div class="row">
+                            <form action="form.php" method="POST" class="form_id clearfix">
+                                <h3>Оформите заявку</h3>
+                                <h4>и мы перезвоним в течение 5 минут</h4>
+                                <input type="hidden" name="form_subject" value="Оформите заявку и мы перезвоним в течение 5 минут">
+                                <input type="hidden" name="project_name" value="ремонт квартир">
+                                <div class="input_wrapper">
+                                    <input type="text" name="name" size="20" placeholder="Ваше имя" required>
+                                </div>
+                                <div class="input_wrapper">
+                                    <input type="tel" name="tel" size="20" placeholder="Ваш телефон" required>
+                                </div>
+                                <div class="input_wrapper">
+                                    <input type="email" name="email" size="20" placeholder="Ваш e-mail" required>
+                                </div>
+                                <button type="submit" name="button" class="button_hover">Отправить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="advantages" id="advantages">
+        <div class="container">
+            <img src="img/advantages_bg_left.jpg" alt="">
+            <img src="img/advantages_bg_right.jpg" alt="">
+            <div class="title">
+                <h2><span>Преимущества</span> компании</h2>
+            </div>
+            <div class="item_container">
+                <div class="wrapper_item">
+                    <div class="item">
+                        <div class="img">
+                            <img src="img/advantages_ico1_hover.png" alt="">
+                        </div>
+                        <div class="wrapper_title">
+                            <h3>Работаем с 1997 года</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua
+                        </p>
+                        <a href="#">Побробнее...</a>
+                    </div>
+                </div>
+                <div class="wrapper_item">
+                    <div class="item">
+                        <div class="img">
+                            <img src="img/advantages_ico2_hover.png" alt="">
+                        </div>
+                        <div class="wrapper_title">
+                            <h3>Демонтажные работы</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua
+                        </p>
+                        <a href="#">Побробнее...</a>
+                    </div>
+                </div>
+                <div class="wrapper_item">
+                    <div class="item">
+                        <div class="img">
+                            <img src="img/advantages_ico3_hover.png" alt="">
+                        </div>
+                        <div class="wrapper_title">
+                            <h3>Выравниваем стены, потолок, пол</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua
+                        </p>
+                        <a href="#">Побробнее...</a>
+                    </div>
+                </div>
+                <div class="wrapper_item">
+                    <div class="item">
+                        <div class="img">
+                            <img src="img/advantages_ico4_hover.png" alt="">
+                        </div>
+                        <div class="wrapper_title">
+                            <h3>Гибкая система скидок</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua
+                        </p>
+                        <a href="#">Побробнее...</a>
+                    </div>
+                </div>
+                <div class="wrapper_item">
+                    <div class="item">
+                        <div class="img">
+                            <img src="img/advantages_ico5_hover.png" alt="">
+                        </div>
+                        <div class="wrapper_title">
+                            <h3>Выполняет работу точно в срок по договору</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua
+                        </p>
+                        <a href="#">Побробнее...</a>
+                    </div>
+                </div>
+                <div class="wrapper_item">
+                    <div class="item">
+                        <div class="img">
+                            <img src="img/advantages_ico6_hover.png" alt="">
+                        </div>
+                        <div class="wrapper_title">
+                            <h3>Умный дом</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua
+                        </p>
+                        <a href="#">Побробнее...</a>
+                    </div>
+                </div>
+                <div class="wrapper_item">
+                    <div class="item">
+                        <div class="img">
+                            <img src="img/advantages_ico7_hover.png" alt="">
+                        </div>
+                        <div class="wrapper_title">
+                            <h3>Доставка материалов</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua
+                        </p>
+                        <a href="#">Побробнее...</a>
+                    </div>
+                </div>
+                <div class="wrapper_item">
+                    <div class="item">
+                        <div class="img">
+                            <img src="img/advantages_ico8_hover.png" alt="">
+                        </div>
+                        <div class="wrapper_title">
+                            <h3>Гарантия на выполеные работы 5 лет</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua
+                        </p>
+                        <a href="#">Побробнее...</a>
+                    </div>
+                </div>
+                <div class="toggle_items">
+                    <div class="wrapper_item">
+                        <div class="item">
+                            <div class="img">
+                                <img src="img/advantages_ico9_hover.png" alt="">
+                            </div>
+                            <div class="wrapper_title">
+                                <h3>клининг</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua
+                            </p>
+                            <a href="#">Побробнее...</a>
+                        </div>
+                    </div>
+                    <div class="wrapper_item">
+                        <div class="item">
+                            <div class="img">
+                                <img src="img/advantages_ico10_hover.png" alt="">
+                            </div>
+                            <div class="wrapper_title">
+                                <h3>дизайн-проект</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua
+                            </p>
+                            <a href="#">Побробнее...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <button id="advantages_toggle_button" class="button_hover">еще</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gallery" id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="title">
+                    <h2>галерея <span>работ</span></h2>
+                </div>
+                <div class="big_slick">
+                    <div>
+                        <div class="col-md-6">
+                            <div class="slider-slick">
+                                <img src="img/gallery1_img1.jpg" alt="">
+                                <img src="img/gallery1_img1.jpg" alt="">
+                                <img src="img/gallery1_img1.jpg" alt="">
+                            </div>
+                            <div class="slider_bot">
+                                <h3>Проект <span>“Каменный остров”</span></h3>
+                                <a class="inline_fancybox" href="#gallery_1">Смотреть все <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="slider-slick">
+                                <img src="img/gallery2_img2.jpg" alt="">
+                                <img src="img/gallery2_img2.jpg" alt="">
+                                <img src="img/gallery2_img2.jpg" alt="">
+                            </div>
+                            <div class="slider_bot">
+                                <h3>Проект <span>“Каменный остров”</span></h3>
+                                <a class="inline_fancybox" href="#gallery_1">Смотреть все <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="slider-slick">
+                                <img src="img/gallery1_img1.jpg" alt="">
+                                <img src="img/gallery1_img1.jpg" alt="">
+                                <img src="img/gallery1_img1.jpg" alt="">
+                            </div>
+                            <div class="slider_bot">
+                                <h3>Проект <span>“Каменный остров”</span></h3>
+                                <a class="inline_fancybox" href="#gallery_1">Смотреть все <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="slider-slick">
+                                <img src="img/gallery2_img2.jpg" alt="">
+                                <img src="img/gallery2_img2.jpg" alt="">
+                                <img src="img/gallery2_img2.jpg" alt="">
+                            </div>
+                            <div class="slider_bot">
+                                <h3>Проект <span>“Каменный остров”</span></h3>
+                                <a class="inline_gallery" href="#gallery_1">Смотреть все <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-md-6">
+                            <div class="slider-slick">
+                                <img src="img/gallery1_img1.jpg" alt="">
+                                <img src="img/gallery1_img1.jpg" alt="">
+                                <img src="img/gallery1_img1.jpg" alt="">
+                            </div>
+                            <div class="slider_bot">
+                                <h3>Проект <span>“Каменный остров”</span></h3>
+                                <a class="inline_fancybox" href="#gallery_1">Смотреть все <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="slider-slick">
+                                <img src="img/gallery2_img2.jpg" alt="">
+                                <img src="img/gallery2_img2.jpg" alt="">
+                                <img src="img/gallery2_img2.jpg" alt="">
+                            </div>
+                            <div class="slider_bot">
+                                <h3>Проект <span>“Каменный остров”</span></h3>
+                                <a class="inline_fancybox" href="#gallery_1">Смотреть все <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="slider-slick">
+                                <img src="img/gallery1_img1.jpg" alt="">
+                                <img src="img/gallery1_img1.jpg" alt="">
+                                <img src="img/gallery1_img1.jpg" alt="">
+                            </div>
+                            <div class="slider_bot">
+                                <h3>Проект <span>“Каменный остров”</span></h3>
+                                <a class="inline_fancybox" href="#gallery_1">Смотреть все <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="slider-slick">
+                                <img src="img/gallery2_img2.jpg" alt="">
+                                <img src="img/gallery2_img2.jpg" alt="">
+                                <img src="img/gallery2_img2.jpg" alt="">
+                            </div>
+                            <div class="slider_bot">
+                                <h3>Проект <span>“Каменный остров”</span></h3>
+                                <a class="inline_gallery" href="#gallery_1">Смотреть все <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-md-6">
+                            <div class="slider-slick">
+                                <img src="img/gallery1_img1.jpg" alt="">
+                                <img src="img/gallery1_img1.jpg" alt="">
+                                <img src="img/gallery1_img1.jpg" alt="">
+                            </div>
+                            <div class="slider_bot">
+                                <h3>Проект <span>“Каменный остров”</span></h3>
+                                <a class="inline_fancybox" href="#gallery_1">Смотреть все <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="slider-slick">
+                                <img src="img/gallery2_img2.jpg" alt="">
+                                <img src="img/gallery2_img2.jpg" alt="">
+                                <img src="img/gallery2_img2.jpg" alt="">
+                            </div>
+                            <div class="slider_bot">
+                                <h3>Проект <span>“Каменный остров”</span></h3>
+                                <a class="inline_fancybox" href="#gallery_1">Смотреть все <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="slider-slick">
+                                <img src="img/gallery1_img1.jpg" alt="">
+                                <img src="img/gallery1_img1.jpg" alt="">
+                                <img src="img/gallery1_img1.jpg" alt="">
+                            </div>
+                            <div class="slider_bot">
+                                <h3>Проект <span>“Каменный остров”</span></h3>
+                                <a class="inline_fancybox" href="#gallery_1">Смотреть все <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="slider-slick">
+                                <img src="img/gallery2_img2.jpg" alt="">
+                                <img src="img/gallery2_img2.jpg" alt="">
+                                <img src="img/gallery2_img2.jpg" alt="">
+                            </div>
+                            <div class="slider_bot">
+                                <h3>Проект <span>“Каменный остров”</span></h3>
+                                <a class="inline_gallery" href="#gallery_1">Смотреть все <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="team" id="team">
+        <div class="container">
+            <div class="col-md-9 col-md-offset-1">
+                <div class="row">
+                    <div class="popap_form">
+                        <h3>Закажите ремонт квартиры <span>прямо сейчас!</span></h3>
+                        <p>и получите помимо скидки, дизайн-проект в подарок!</p>
+                        <a class="inline_fancybox button_hover" href="#inline_form">Отправить заявку</a>
+                        <img src="img/popap_form_img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="title">
+                <h2>наша <span>команда</span></h2>
+            </div>
+            <div class="slider_team">
+                <div class="col-md-4">
+                    <div class="slide">
+                        <div class="photo">
+                            <img src="img/team_slide1.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Василий <span>петров</span></h2>
+                            <h3>Директор</h3>
+                            <p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="slide">
+                        <div class="photo">
+                            <img src="img/team_slide2.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>наталья <span>васильева</span></h2>
+                            <h3>Менеджер</h3>
+                            <p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="slide">
+                        <div class="photo">
+                            <img src="img/team_slide3.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Дмитрий <span>Иванов</span></h2>
+                            <h3>Дизайнер интерьера</h3>
+                            <p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="slide">
+                        <div class="photo">
+                            <img src="img/team_slide3.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Дмитрий <span>Иванов</span></h2>
+                            <h3>Дизайнер интерьера</h3>
+                            <p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper_reviews" id="reviews">
+        <div class="container">
+            <div class="title">
+                <h2><span>Отзывы</span> наших клиентов</h2>
+            </div>
+            <div class="review">
+                <div class="clearfix">
+                    <div class="img"><img src="img/review_photo1.jpg" alt=""></div>
+                    <div class="text">
+                        <h3>Евгений Астахов</h3>
+                        <h4>г. Москва</h4>
+                        <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                        <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review">
+                <div class="clearfix">
+                    <div class="img"><img src="img/review_photo1.jpg" alt=""></div>
+                    <div class="text">
+                        <h3>Евгений Астахов</h3>
+                        <h4>г. Москва</h4>
+                        <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                        <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review">
+                <div class="clearfix">
+                    <div class="img"><img src="img/review_photo1.jpg" alt=""></div>
+                    <div class="text">
+                        <h3>Евгений Астахов</h3>
+                        <h4>г. Москва</h4>
+                        <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                        <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews_toggle">
+                <div class="review">
+                    <div class="clearfix">
+                        <div class="img"><img src="img/review_photo1.jpg" alt=""></div>
+                        <div class="text">
+                            <h3>Евгений Астахов</h3>
+                            <h4>г. Москва</h4>
+                            <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                            <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="clearfix">
+                        <div class="img"><img src="img/review_photo1.jpg" alt=""></div>
+                        <div class="text">
+                            <h3>Евгений Астахов</h3>
+                            <h4>г. Москва</h4>
+                            <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                            <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a id="reviews_toggle_button" href="#" class="button_hover">смотреть больше</a>
+        </div>
+    </div>
+    <div id="map" style="width: 100%; height: 630px">
+        <div class="container">
+            <div class="content clearfix">
+                <h3>Наши контакты</h3>
+                <div class="content_map_item">
+                    <h4>Адрес</h4>
+                    <p>г. Название, ул. Название 7, оф. 15</p>
+                </div>
+                <div class="content_map_item">
+                    <h4>E-mail</h4>
+                    <p>remont.prosto@yandex.ru</p>
+                </div>
+                <div class="content_map_item">
+                    <h5>+ 2 (458) 320 33 60</h5>
+                </div>
+                <div class="content_map_item">
+                    <div class="clearfix">
+                        <h4>график работы</h4>
+                        <p>Пн.- Пт. <span>9.00 - 20.00</span></p>
+                        <p>Обед: <span>13.00 - 14.00</span></p>
+                        <p>Сб. - Вос. <span>Выходной</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="header_bottom">
+            <div class="container">
+                <div class="col-md-3 col-sm-4 col-xs-7">
+                    <div class="row">
+                        <a href="" class="logo">
+                            <img src="img/logo.png" alt="">
+                            <h2>Ремонт <span>квартир</span></h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-1 col-xs-5 col-xs-offset-0">
+                    <div class="row">
+                        <div class="adres">
+                            <ul>
+                                <li>Все права защищены 2016 г.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 popap_callback col-xs-8 col-sm-offset-0 col-xs-offset-2">
+                    <div class="row">
+                        <a class="inline_fancybox button_hover" href="#inline_form">связаться с нами</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div style="display: none">
+        <div id="inline_form">
+            <form action="form.php" method="POST" class="form_id clearfix">
+                <h3>Заказать звонок</h3>
+                <h4>и мы перезвоним в течение 5 минут</h4>
+                <input type="hidden" name="form_subject" value="Оформите заявку и мы перезвоним в течение 5 минут">
+                <input type="hidden" name="project_name" value="ремонт квартир">
+                <div class="input_wrapper">
+                    <input type="text" name="name" size="20" placeholder="Ваше имя" required>
+                </div>
+                <div class="input_wrapper">
+                    <input type="tel" name="tel" size="20" placeholder="Ваш телефон" required>
+                </div>
+                <button type="submit" name="button" class="button_hover">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+    <div style="display: none">
+        <div id="thanks">
+            <h3>Ваша заявка успешно отправлена!</h3>
+        </div>
+    </div>
+    <div style="display: none">
+        <div id="gallery_1" class="popap_gallery">
+            <div class="container">
+                <div class="clearfix">
+                    <h3>Проект <span>“Каменный остров”</span></h3>
+                </div>
+                <div class="col-md-4"><img src="img/gallery1_img1.jpg" alt=""></div>
+                <div class="col-md-4"><img src="img/gallery1_img1.jpg" alt=""></div>
+                <div class="col-md-4"><img src="img/gallery1_img1.jpg" alt=""></div>
+                <div class="col-md-4"><img src="img/gallery1_img1.jpg" alt=""></div>
+                <div class="col-md-4"><img src="img/gallery1_img1.jpg" alt=""></div>
+                <div class="col-md-4"><img src="img/gallery1_img1.jpg" alt=""></div>
+                <div class="col-md-4"><img src="img/gallery1_img1.jpg" alt=""></div>
+                <div class="col-md-4"><img src="img/gallery1_img1.jpg" alt=""></div>
+                <div class="col-md-4"><img src="img/gallery1_img1.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.malihu.PageScroll2id.min.js"></script>
+    <script type="text/javascript" src="libs/slick.min.js"></script>
+    <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

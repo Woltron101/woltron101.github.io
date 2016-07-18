@@ -1,0 +1,408 @@
+@media screen and (max-width: 1200px) {
+    .slide {
+        height: 450px;
+        overflow: hidden;
+    }
+    .section2 .wrap_circle {
+        margin-left: -135px;
+    }
+    .section2 .section2__form {
+        width: calc(100% - 600px);
+        margin-left: 50px;
+    }
+    .section2 {
+        overflow: hidden;
+    }
+    .footer__right a {
+        font: 19px "Georgia", sans-serif;
+        padding: 5px 0 5px;
+        padding-left: 40px;
+    }
+    .footer__left a {
+        margin-left: 20px;
+    }
+    .nav li a {
+        padding: 0 10px;
+    }
+    .nav__right {
+        display: none;
+    }
+    .section4 .btn {
+        display: block;
+        width: 90%;
+        height: auto;
+        background: #640002;
+        line-height: 30px;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 10px;
+        margin: 91px auto 0;
+        text-align: center;
+        color: #fff;
+        border-radius: 5px;
+    }
+    .section4 .calc_right {
+        width: 280px;
+    }
+    .section4 .calculator h2 {
+        font: 18px "Calibri-Bold", sans-serif;
+    }
+    .slide_nav {
+        height: 110px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .footer__left a {
+        display: none;
+    }
+    .footer__right .text {
+        display: none;
+    }
+    .footer__right a {
+        font: 36px "Georgia", sans-serif;
+        background: url(../img/footer_phone.png) no-repeat left center;
+    }
+    #map .map_left {
+        border-radius: 0;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .slide_nav {
+        height: 66px;
+    }
+    .slide {
+        height: 350px;
+        overflow: hidden;
+    }
+    .section4 .btn {
+        margin: 20px auto 0;
+    }
+    .section4 .calc_right {
+        width: 100%;
+    }
+    .section4 .range_left,
+    .section4 .range_right {
+        margin-left: 140px;
+    }
+    .section4 .range_right {
+        margin-left: 0;
+    }
+    .section4 .calculator>.form {
+        width: 100%;
+        margin: 20px 0 0 10px;
+        float: none;
+    }
+    .header_default__callback {
+        width: 60%;
+    }
+    .nav__left {
+        display: none;
+    }
+    .header_default__left {
+        display: none;
+    }
+    .header_default__callback {
+        float: right;
+    }
+    .header_default {
+        text-align: center;
+        background: #393939;
+        padding: 10px 10px;
+    }
+    #map .map_right .img {
+        height: 280px;
+    }
+    #map .map_left {
+        width: 320px;
+        top: 35px;
+        left: 50px;
+        transform: none;
+        padding: 30px 0;
+    }
+    #map .map_right {
+        width: 320px;
+        top: 35px;
+        right: 50px;
+        transform: none;
+    }
+    #map {
+        height: 900px!important;
+    }
+    .shapka h2 {
+        font: 65px "Carolina", sans-serif;
+        line-height: 75px;
+    }
+    .shapka {
+        padding: 100px 0 120px;
+    }
+    .section2 .wrap_circle {
+        margin-left: 0;
+        float: none;
+        width: 650px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+    }
+    .section2 .circle {
+        margin-bottom: 50px;
+    }
+    .section2 .section2__form {
+        position: relative;
+        z-index: 2;
+        margin-top: 150px;
+        width: 350px;
+        float: none;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+    .section2 {
+        padding-bottom: 100px;
+    }
+    .section1 .title h2 span:after,
+    .section1 .title h2 span:before {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .popap_gallery .col-md-4 {
+        width: 100%;
+        height: auto;
+    }
+    .popap_gallery .container {
+        width: 100%;
+    }
+    .popap_form img {
+        display: none;
+    }
+    .popap_form {
+        text-align: center;
+    }
+    .popap_form a {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 740px) {
+    .advantages .wrapper_item {
+        width: 220px;
+        display: inline-block;
+        padding: 30px 15px 15px;
+        border: 1px solid #ededed;
+        vertical-align: top;
+        margin: 0 .8% 20px;
+        height: 330px;
+        position: relative;
+        background: #fff;
+    }
+    .advantages .wrapper_item:hover .item {
+        margin-top: -100px;
+        max-height: 385px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+    .advantages .wrapper_item {
+        padding: 30px 15px 15px;
+        margin: 0 2% 20px!important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .slide_nav {
+        height: 110px;
+    }
+    .footer__bot {
+        display: block;
+    }
+    body {
+        min-width: 750px;
+    }
+    .section5 .text h3 {
+        display: block;
+    }
+    .section5 li h3 {
+        width: 255px;
+        position: absolute;
+        top: -5px;
+        left: 80px;
+    }
+    .section5 .text li:before {
+        color: #bab7b6;
+        line-height: 60px;
+    }
+    .pc_li {
+        display: none;
+    }
+    .section1 .slider_nav {
+        margin-bottom: 0;
+        padding: 0 77px;
+    }
+    .shapka h2 {
+        font: 75px "Carolina", sans-serif;
+        line-height: 70px;
+    }
+    .shapka {
+        background: url(../img/shapka_bg_mobile.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    .section1 .slider_nav .slick-next {
+        right: 30px;
+    }
+    .section1 .slider_nav .slick-prev {
+        left: 30px;
+    }
+    .wrapper_form input {
+        float: left;
+        margin: 0 5px;
+        width: calc(50% - 10px);
+        margin-bottom: 10px;
+    }
+    .wrapper_form button {
+        width: 50%;
+        margin: 5px auto 20px;
+    }
+    .shapka .h1 {
+        margin-bottom: 85px;
+    }
+    button.toggle {
+        display: block;
+        float: right;
+    }
+    .nav ul {
+        position: absolute;
+        background: rgba(234, 203, 143, 0.8);
+        width: 400px;
+        top: 100%;
+        right: 0;
+        z-index: 999;
+        display: none;
+    }
+    .nav li {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
+    .nav li a {
+        color: #000;
+        font-size: 30px;
+        padding: 10px 0;
+    }
+    .nav li a.mPS2id-highlight,
+    .nav li a:hover {
+        color: #fff;
+        border: none;
+        background: #862933;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 740px) {}
+
+@media screen and (max-width: 640px) {
+    .thanks a {
+    display: block;
+ 
+    font: 33px "MinionPro-Bold", sans-serif;
+   
+    height: 70px;
+    padding: 0;
+    margin: 50px 0 10px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    line-height: 72px;
+    text-decoration: none;
+}
+    .slide_nav {
+        height: 135px;
+    }
+    .section4 .range_left {
+        margin-left: 84px;
+    }
+    .map_content {
+        background: #000;
+    }
+    body {
+        min-width: 640px;
+    }
+    .shapka .wrapper_form {
+        display: none;
+    }
+    .toggle_form {
+        display: block;
+    }
+    .shapka {
+        padding-bottom: 60px;
+    }
+    .wrapper_form input {
+        height: 80px;
+        font: 24px "Calibri", sans-serif;
+        float: none;
+        margin-left: 0;
+        width: 100%;
+    }
+    .wrapper_form button {
+        height: 80px;
+        width: 100%;
+        font-size: 30px;
+    }
+    .wrapper_form h3 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .wrapper_form h3 .color {
+        font-size: 36px;
+    }
+    .section1 .slider_for {
+        padding: 0 40px;
+    }
+    .section1 .slider_for .slick-next {
+        z-index: 1;
+    }
+    .slick-slider .slick-track,
+    .slick-slider .slick-list {
+        z-index: 2;
+        position: relative;
+    }
+    .section2 .wrap_circle {
+        margin-left: -60px;
+    }
+    .section5 .text h4 {
+        font-size: 26px;
+    }
+    .section5 .text p {
+        font-size: 22px;
+    }
+    .section5 li {
+        height: auto;
+        margin-bottom: 30px;
+    }
+    #map .map_left {
+        border-radius: 0;
+        left: 0;
+        top: 0;
+    }
+    .section6:before {
+        z-index: 20;
+    }
+    #map .map_right {
+        border-radius: 0;
+        right: 0;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 550px) {}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (max-width: 380px) {}
+
+@media screen and (min-width: 761px) {}

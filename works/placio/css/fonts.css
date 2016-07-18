@@ -1,0 +1,101 @@
+/* font-family: "AgoraSansProRegular"; */
+
+@font-face {
+    font-family: "Calibri";
+    src: url("../fonts/calibri-regular.eot");
+    src: url("../fonts/calibri-regular.eot?#iefix")format("embedded-opentype"), url("../fonts/Calibri.woff") format("woff"), url("../fonts/Calibri.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Georgia-Italic";
+    src: url("../fonts/Georgia-Italic.eot");
+    src: url("../fonts/Georgia-Italic.eot?#iefix")format("embedded-opentype"), url("../fonts/Georgia-Italic.ttf") format("woff"), url("../fonts/Georgia-Italic.woff") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "AgoraSansProBold"; */
+
+@font-face {
+    font-family: "Calibri-Bold";
+    src: url("../fonts/calibri-bold.eot");
+    src: url("../fonts/calibri-bold.eot?#iefix")format("embedded-opentype"), url("../fonts/Calibri-Bold.woff") format("woff"), url("../fonts/Calibri-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "AgoraSansProLight"; */
+
+@font-face {
+    font-family: "Calibri-Italic";
+    src: url("../fonts/calibri-italic.eot");
+    src: url("../fonts/calibri-italic.eot?#iefix")format("embedded-opentype"), url("../fonts/Calibri-Italic.woff") format("woff"), url("../fonts/Calibri-Italic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "AgoraSansProMedium"; */
+
+@font-face {
+    font-family: "Calibri-Light";
+    src: url("../fonts/calibri-light.eot");
+    src: url("../fonts/calibri-light.eot?#iefix")format("embedded-opentype"), url("../fonts/Calibri-Light.woff") format("woff"), url("../fonts/Calibri-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "AgoraSansProBlack"; */
+
+@font-face {
+    font-family: "Carolina";
+    src: url("../fonts/carolina.eot");
+    src: url("../fonts/carolina.eot?#iefix")format("embedded-opentype"), url("../fonts/Carolina.woff") format("woff"), url("../fonts/Carolina.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "AgoraSansProThin"; */
+
+@font-face {
+    font-family: "Georgia";
+    src: url("../fonts/georgia-regular.eot");
+    src: url("../fonts/georgia-regular.eot?#iefix")format("embedded-opentype"), url("../fonts/Georgia.woff") format("woff"), url("../fonts/Georgia.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Georgia-Bold";
+    src: url("../fonts/georgia-bold.eot");
+    src: url("../fonts/georgia-bold.eot?#iefix")format("embedded-opentype"), url("../fonts/Georgia-Bold.woff") format("woff"), url("../fonts/Georgia-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Georgia-Bold-Italic";
+    src: url("../fonts/georgia-bold-italic.eot");
+    src: url("../fonts/georgia-bold-italic.eot?#iefix")format("embedded-opentype"), url("../fonts/Georgia-BoldItalic.woff") format("woff"), url("../fonts/Georgia-BoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "MinionPro-Bold";
+    src: url("../fonts/MinionPro-Bold.eot");
+    src: url("../fonts/MinionPro-Bold.eot?#iefix")format("embedded-opentype"), url("../fonts/MinionPro-Bold.woff") format("woff"), url("../fonts/MinionPro-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Rage";
+    src: url("../fonts/rage.eot");
+    src: url("../fonts/rage.eot?#iefix")format("embedded-opentype"), url("../fonts/RageItalic.woff") format("woff"), url("../fonts/RageItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+

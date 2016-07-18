@@ -1,0 +1,418 @@
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 998px;
+    }
+    .shapka form {
+        padding: 15px 0 60px;
+    }
+    .questions .number_question {
+        position: static;
+        margin-bottom: 20px;
+        font: 28px "RobotoSlabRegular", sans-serif;
+        text-transform: uppercase;
+    }
+    .questions {
+        height: 100%;
+        min-height: 700px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .container {
+        width: 768px;
+        padding: 0 15px;
+    }
+    .shapka ul {
+        padding: 0 30px;
+    }
+    .shapka .input_wrapper {
+        height: 70px;
+    }
+    .slider .item2 li {
+        font: 20px "RobotoSlabBold", sans-serif;
+    }
+    .slider .item3 li {
+        padding: 0 15px;
+        font: 20px "RobotoSlabBold", sans-serif;
+        color: #fff;
+    }
+    .wrapper_materials li {
+        padding: 0 15px;
+        margin-right: 3.33%;
+        width: 30%;
+    }
+    .footer .email {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .footer .footer_center {
+        margin: 20px 0;
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+    .footer .phone {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .wrapper_questions textarea {
+        border: 1px solid rgba(173, 172, 172, 0.6)
+    }
+    .questions h2 {
+        font: 35px "RobotoSlabRegular", sans-serif;
+    }
+    .questions li {
+        font: 20px "RobotoSlabBold", sans-serif;
+    }
+    .questions {
+        height: 100%;
+        min-height: 500px;
+    }
+    .questions .container {
+        box-sizing: border-box;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 5px;
+    }
+    .hidden-xs {
+        display: none;
+    }
+    .visible-xs {
+        display: block;
+    }
+    header .email {
+        float: left;
+        width: 35%;
+        text-align: left;
+    }
+    header .phone {
+        float: right;
+        width: 65%;
+        text-align: right;
+    }
+    header .container {
+        padding: 0 15px;
+    }
+    .shapka {
+        padding: 140px 0 65px;
+    }
+    .shapka p {
+        font: 17px "RobotoSlabRegular", sans-serif;
+    }
+    .slider .item1 h2 {
+        font: 35px "RobotoSlabBold", sans-serif;
+    }
+    .slider .item1 p {
+        font: 24px "RobotoSlabBold", sans-serif;
+    }
+    .wrapper_test h2 {
+        font: 35px "RobotoSlabRegular", sans-serif;
+    }
+    .wrapper_training h2 {
+        font: 35px "RobotoSlabRegular", sans-serif;
+    }
+    .wrapper_training .container {
+        padding: 0 15px;
+    }
+    .wrapper_subs .container {
+        padding: 0 10px;
+    }
+    .wrapper_materials h2 {
+        font: 35px "RobotoSlabRegular", sans-serif;
+    }
+    .wrapper_materials li {
+        font: 16px "RobotoSlabRegular", sans-serif;
+    }
+    .wrapper_telegram h2 {
+        font: 35px "RobotoSlabRegular", sans-serif;
+    }
+    .wrapper_telegram .container {
+        padding: 0 30px;
+    }
+    .wrapper_questions .container {
+        padding: 0 15px;
+    }
+    .wrapper_subs input[type=email] {
+        width: 60%;
+    }
+    .wrapper_subs button[type=submit] {
+        width: 40%;
+    }
+    .questions h2 {
+        font: 30px "RobotoSlabRegular", sans-serif;
+    }
+    #thanks {
+        width: 100%;
+    }
+    #footer_center {
+        width: 500px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .questions h2 {
+        font: 25px "RobotoSlabRegular", sans-serif;
+    }
+    .question_form p {
+        font: 15px "RobotoSlabRegular", sans-serif;
+        color: #fff;
+        text-align: center;
+    }
+    .question_form .wrapper_subs {
+        padding: 20px 0;
+    }
+    .question_form h3 {
+        font: 15px "RobotoSlabRegular", sans-serif;
+        color: #fff;
+        text-align: center;
+    }
+    #thanks-test {
+        width: 550px;
+        padding: 70px 30px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    header .email {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    header .phone {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+    header .email a {
+        font: 20px "RobotoSlabRegular", sans-serif;
+        background: url(../images/email_header_bg.png) no-repeat left 6px;
+    }
+    header {
+        padding: 10px 0;
+    }
+    header .phone a {
+        font: 20px "RobotoSlabRegular", sans-serif;
+        background: url(../images/phone_header_bg.png) no-repeat left 7px;
+    }
+    .shapka h1 {
+        font: 25px "RobotoSlabRegular", sans-serif;
+    }
+    .shapka input[name=email] {
+        float: none;
+        width: 100%;
+        height: 50px;
+    }
+    .shapka button[type=submit] {
+        float: none;
+        width: 100%;
+        margin-right: 0px;
+    }
+    .shapka .input_wrapper {
+        height: auto;
+    }
+    .shapka li {
+        float: none;
+        width: 100%;
+        padding: 0 15px;
+        font: 16px "RobotoSlabRegular", sans-serif;
+        margin-bottom: 15px;
+    }
+    .slider .item1 h2 {
+        font: 20px "RobotoSlabBold", sans-serif;
+    }
+    .slider .item1 p {
+        font: 16px "RobotoSlabBold", sans-serif;
+    }
+    .slider .item2 li {
+        font: 16px "RobotoSlabBold", sans-serif;
+        float: none;
+        width: 100%!important;
+    }
+    .slider .item2 h2 {
+        font: 30px "RobotoSlabBold", sans-serif;
+        margin-bottom: 35px;
+    }
+    .slider .item3 h2 {
+        font: 25px "RobotoSlabBold", sans-serif;
+        margin-bottom: 35px;
+    }
+    .slider .item3 li {
+        width: 100%;
+        padding: 0 15px;
+        display: block;
+        margin: 0;
+        font: 15px "RobotoSlabBold", sans-serif;
+    }
+    .slider .item3 li img {
+        height: 40px;
+        width: auto;
+        margin: 0 auto 10px;
+    }
+    .slider .owl-dots {
+        bottom: 20px;
+    }
+    .wrapper_test h2 {
+        font: 25px "RobotoSlabRegular", sans-serif;
+    }
+    .wrapper_test button {
+        width: 100%;
+    }
+    .wrapper_test h3 {
+        font: 20px "RobotoSlabRegular", sans-serif;
+    }
+    .wrapper_training h2 {
+        font: 25px "RobotoSlabRegular", sans-serif;
+    }
+    .wrapper_training li {
+        width: 100%;
+        padding: 20px 10px 15px;
+        box-sizing: border-box;
+        display: block;
+        height: auto;
+        border: none;
+    }
+    .wrapper_subs input[type=email] {
+        width: 100%;
+        padding: 0 30px;
+    }
+    .wrapper_subs .input_wrapper {
+        width: 100%;
+        height: auto;
+    }
+    .wrapper_subs input {
+        float: none;
+        height: 50px;
+    }
+    .wrapper_subs button[type=submit] {
+        width: 100%;
+        height: 55px;
+        position: static;
+        right: 0;
+    }
+    .wrapper_materials h2 {
+        font: 25px "RobotoSlabRegular", sans-serif;
+    }
+    .wrapper_materials li {
+        padding: 0 15px;
+        float: none;
+        margin: 0 0 25px;
+        width: 100%;
+    }
+    .wrapper_materials li img {
+        width: 80px;
+        display: block;
+        margin: 0 auto 15px;
+    }
+    .wrapper_telegram h2 {
+        font: 25px "RobotoSlabRegular", sans-serif;
+    }
+    .wrapper_telegram button {
+        height: auto;
+        font: 20px "RobotoSlabRegular", sans-serif;
+        min-height: 50px;
+    }
+    .wrapper_questions h2 {
+        font: 35px "RobotoSlabRegular", sans-serif;
+    }
+    .questions h2 {
+        font: 18px "RobotoSlabRegular", sans-serif;
+        margin-bottom: 10px;
+    }
+    .questions .number_question {
+        font: 20px "RobotoSlabRegular", sans-serif;
+    }
+    .questions {
+        height: 100%;
+        min-height: 0;
+    }
+    .questions li {
+        font: 15px "RobotoSlabBold", sans-serif;
+    }
+    #thanks h2 {
+        font: 35px "RobotoSlabRegular", sans-serif;
+    }
+    .question_form button[name=telegram] {
+        font: 17px "RobotoSlabRegular", sans-serif;
+    }
+    #footer_center {
+        width: 300px;
+        box-sizing: border-box;
+    }
+    #thanks-test {
+        width: 100%;
+        padding: 40px 15px;
+    }
+    #thanks-test h2 {
+        font: 30px "RobotoSlabRegular", sans-serif;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .slider .item1 h2 {
+        font: 18px "RobotoSlabBold", sans-serif;
+    }
+    .slider .item2 h2 {
+        font: 28px "RobotoSlabBold", sans-serif;
+        margin-bottom: 35px;
+    }
+    .slider .item3 h2 {
+        font: 20px "RobotoSlabBold", sans-serif;
+        margin-bottom: 35px;
+    }
+    .wrapper_training h2 {
+        font: 20px "RobotoSlabRegular", sans-serif;
+    }
+    .wrapper_test h2 {
+        font: 20px "RobotoSlabRegular", sans-serif;
+    }
+    .wrapper_telegram h2 {
+        font: 20px "RobotoSlabRegular", sans-serif;
+    }
+    .wrapper_questions h2 {
+        font: 20px "RobotoSlabRegular", sans-serif;
+    }
+    .wrapper_training h3 {
+        font: 18px "RobotoSlabRegular", sans-serif;
+    }
+    .wrapper_test h3 {
+        font: 18px "RobotoSlabRegular", sans-serif;
+    }
+    .wrapper_test h3 span {
+        font: 18px "RobotoSlabBold", sans-serif;
+    }
+    .wrapper_training h3 span {
+        font: 18px "RobotoSlabBold", sans-serif;
+    }
+    .wrapper_materials h2 {
+        font: 20px "RobotoSlabRegular", sans-serif;
+    }
+    .wrapper_telegram h3 {
+        font: 18px "RobotoSlabRegular", sans-serif;
+    }
+    .wrapper_questions button[type=submit] {
+        width: 100%;
+    }
+    #thanks h2 {
+        font: 25px "RobotoSlabRegular", sans-serif;
+    }
+    #thanks p {
+        font: 15px "RobotoSlabRegular", sans-serif;
+        color: #fff;
+        text-align: center;
+    }
+    .questions h2 {
+        font: 13px "RobotoSlabRegular", sans-serif;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 769px) {}

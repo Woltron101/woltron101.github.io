@@ -1,0 +1,25 @@
+{
+  "name": "jquery-rating",
+  "version": "0.0.1",
+  "homepage": "https://github.com/lonelyghost/jquery-rating",
+  "authors": [
+    "Michelle S <michelle@codeallday.com>"
+  ],
+  "main": "jquery.rating.js",
+  "keywords": [
+    "rating",
+    "stars",
+    "jQuery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">=1.3"
+  }
+}

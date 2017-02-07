@@ -5,10 +5,10 @@ $(function() {
         views: {},
         collections: {}
     }
+
     var template = function(id) {
         return _.template($('#' + id).html());
     }
-
 
     app.views.Search = Backbone.View.extend({
         el: '#search',
@@ -19,9 +19,8 @@ $(function() {
             var text = this.$el.val();
             app.views.Select.search = text;
             return text;
-        },
+        }
     })
-
 
     app.collections.Select = Backbone.Collection.extend({});
 
@@ -94,7 +93,7 @@ $(function() {
         },
 
         removeEmail: function(e) {
-            li = $(e.target).closest('li');
+            li = $(e.target).closest('li')
             li.remove();
             this.moveToDropDown(li);
             return this;
@@ -116,11 +115,10 @@ $(function() {
                 regExp = new RegExp(strong, 'i'),
                 str = '';
 
-            if (index > 4) return;
+            if (index > 4) return this;
 
             if (strong) {
                 for (key in item) {
-                    if (key === '_id') continue;
                     if (item[key].search(regExp) === 0) {
                         if (key === 'email') {
                             str += (item[key].replace(regExp, '<strong>' + strong + '</strong>')).toLowerCase();

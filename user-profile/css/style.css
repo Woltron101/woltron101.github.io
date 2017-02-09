@@ -1,0 +1,33 @@
+.authorization {
+    width: 320px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h3,
+.authorization input[type="text"],
+.authorization input[type="password"] {
+    margin-bottom: 30px;
+}
+
+.authorization input[type="button"] {
+    width: 100%;
+}
+
+.logout {
+    padding-top: 20px;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+a.edit {
+    margin-top: 15px;
+}

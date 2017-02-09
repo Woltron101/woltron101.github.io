@@ -31,3 +31,7 @@ img {
 a.edit {
     margin-top: 15px;
 }
+
+input.ng-invalid {
+    background-color: pink;
+}

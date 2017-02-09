@@ -8,7 +8,17 @@
             <label for="surname">Surname</label><input type="text" class="form-control" id="surname" ng-model="edit.user.surname">
         </div>
         <div class="form-group">
-            <label for="gender">Gender</label><input type="text" class="form-control" id="gender" ng-model="edit.user.gender">
+            <label for="gender">Gender</label>
+            <div>
+                <label>
+                    <input type="radio" ng-model="edit.user.gender" value="male">
+                    Male
+                </label>
+                <label>
+                    <input type="radio" ng-model="edit.user.gender" value="female">
+                    Female
+                </label>
+            </div>
         </div>
         <div class="form-group">
             <label for="email">Email</label><input type="text" class="form-control" id="email" ng-model="edit.user.email">

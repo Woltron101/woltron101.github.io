@@ -1,0 +1,78 @@
+<form name="filters" class="filters">
+    <h3 class="col-md-12">Filters</h3>
+    <div class="form-group col-md-3">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" ng-model="users.filters.name">
+    </div>
+    <div class="form-group col-md-3">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" ng-model="users.filters.username">
+    </div>
+    <div class="form-group col-md-3">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" ng-model="users.filters.email">
+    </div>
+    <div class="form-group col-md-3">
+        <label for="email">Name &amp; Username &amp; Email </label>
+        <input type="text" class="form-control" ng-model="users.filters.search">
+    </div>
+</form>
+<div class="col-md-12">
+    <table class="table table-hover" ng-controller="sortController as sort">
+        <thead>
+            <tr>
+                <th class="sort" ng-click="sort.filterOrderBy('name')">
+                    Name
+                    <span class="glyphicon glyphicon-menu-{{sort.sortIconClass('name')}}"></span>
+                </th>
+                <th class="sort" ng-click="sort.filterOrderBy('username')">
+                    Username
+                    <span class="glyphicon glyphicon-menu-{{sort.sortIconClass('username')}}"></span>
+                </th>
+                <th class="sort" ng-click="sort.filterOrderBy('email')">
+                    Email
+                    <span class="glyphicon glyphicon-menu-{{sort.sortIconClass('email')}}"></span>
+                </th>
+                <th>City</th>
+                <th class="sort" ng-click="sort.filterOrderBy('street')">
+                    Streed
+                    <span class="glyphicon glyphicon-menu-{{sort.sortIconClass('street')}}"></span>
+                </th>
+                <th>Distance, km</th>
+                <th>Phone</th>
+                <th>Website</th>
+                <th class="sort" ng-click="sort.filterOrderBy('company.name')">
+                    Company Name
+                    <span class="glyphicon glyphicon-menu-{{sort.sortIconClass('company.name')}}"></span>
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="user in $root.users | 
+            filter: {name:users.filters.name} | 
+            filter: {username:users.filters.username} | 
+            filter: {email:users.filters.email} | 
+            columnFilter:(users.filters.search) |             
+            orderBy: sort.orderBy : sort.reverse" id="{{user.id}}" repeat-end>
+                <td>{{user.name}}</td>
+                <td>{{user.username}}</td>
+                <td>{{user.email}}
+                    <span class="glyphicon glyphicon-copy" ngclipboard data-clipboard-text="{{user.email}}"></sapn>
+                </td>
+                <td>{{user.address.city}}</td>
+                <td>{{user.address.street}}</td>
+                <td>{{(users.distance(user.address.geo.lat, user.address.geo.lng))?users.distance(user.address.geo.lat, user.address.geo.lng):''}}</td>
+                <td>{{user.phone}}</td>
+                <td>{{user.website}}</td>
+                <td>{{user.company.name}}</td>
+                <td>
+                    <span class="glyphicon glyphicon-trash" title="Delete" ng-click="users.remove($index+1)"></span>
+                    <span class="glyphicon glyphicon-pencil" title="Edit" ng-click="users.edit(user)"></span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-primary" ng-click="users.addNewUser()">Add User</button>
+</div>
+<div ui-view></div>

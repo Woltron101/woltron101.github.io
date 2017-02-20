@@ -16,11 +16,11 @@ var users = angular.module('users', [
                     controller: 'usersController as users'
                 })
                 .state('users.add', {
-                    url: 'users/add',
+                    url: '/add',
                     templateUrl: 'templates/modal.html'
                 })
                 .state('users.edit', {
-                    url: 'users/edit',
+                    url: '/edit',
                     templateUrl: 'templates/modal.html'
                 })
 
@@ -30,50 +30,35 @@ var users = angular.module('users', [
 
 
 
-.run(function($rootScope, $http) {
-    $rootScope.pos = {};
+.run(function($rootScope, $http, $localStorage) {
+    $localStorage.pos = {};
     $rootScope.users = [];
 
-    $http({
-        method: 'GET',
-        url: 'https://jsonplaceholder.typicode.com/users'
-    }).then(function(response) {
-        $rootScope.users = response.data;
-    });
-
     getLocation();
+    getUsers();
+
+    function getUsers() {
+        $http({
+            method: 'GET',
+            url: 'https://jsonplaceholder.typicode.com/users'
+        }).then(function(response) {
+            $rootScope.users = response.data;
+        });
+    }
 
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function(position) {
-
-                $rootScope.pos.lat = position.coords.latitude;
-                $rootScope.pos.lng = position.coords.longitude;
-            }, function(error) {
-                console.log("error ", error);
-
-            });
+                $localStorage.pos.lat = position.coords.latitude;
+                $localStorage.pos.lng = position.coords.longitude;
+                getUsers();
+            })
         } else {
             alert("Geolocation is not supported");
         }
     }
+
 });
-;
-(function() {
-    'use strict';
-
-    angular
-        .module('users')
-        .controller('mainController', mainController);
-
-    mainController.inject = [''];
-
-    function mainController() {
-        var vm = this
-
-
-    }
-})();
 ;
 (function() {
     'use strict';
@@ -82,9 +67,9 @@ var users = angular.module('users', [
         .module('users')
         .controller('usersController', usersController);
 
-    usersController.inject = ['$http', '$rootScope', 'distance', '$state'];
+    usersController.inject = ['$http', '$rootScope', 'distance', '$state', '$timeout'];
 
-    function usersController($http, $rootScope, distance, $state) {
+    function usersController($http, $rootScope, distance, $state, $timeout) {
         var vm = this;
         var root = $rootScope;
 
@@ -126,7 +111,14 @@ var users = angular.module('users', [
             var target = angular.element(e.target);
             if (target.hasClass('modal-wrap') || target.hasClass('close') || e.keyCode === 27) {
                 vm.modal.active = false;
+                $state.go('users');
             }
+        }
+        vm.showCopiedLabel = function(user) {
+            user.showEmailCopied = true;
+            $timeout(function() {
+                user.showEmailCopied = false;
+            }, 1000)
         }
 
         function showModal() {
@@ -174,36 +166,12 @@ var users = angular.module('users', [
 
     angular
         .module('users')
-        .factory('users', users);
-
-    users.inject = ['$http'];
-
-    function users($http) {
-        var service = {};
-
-        // service.filterOrederBy = function(column, orderBy, reverse) {
-        //     if (this.orderBy === column) {
-        //         this.reverse = !this.reverse;
-        //     } else {
-        //         this.orderBy = column;
-        //     }
-        // }
-        // service.remove = function(index) {
-        //     this.users.splice(index, 1)
-        // }
-        return service;
-    }
-})();
-(function() {
-    'use strict';
-
-    angular
-        .module('users')
         .factory('distance', distance);
 
-    distance.inject = ['$rootScope'];
+    distance.inject = ['$localStorage'];
 
-    function distance($rootScope) {
+    function distance($localStorage) {
+        // console.log("$localStorage ", $localStorage.pos);
         var service = {
             calculate: calculate
         };
@@ -211,10 +179,12 @@ var users = angular.module('users', [
         return service;
 
         function calculate(lat1, lon1) {
+            if (!$localStorage.pos.lat && !$localStorage.pos.lng) return;
+            if (!lat1 || !lon1) return " ";
 
             var radlat1 = Math.PI * lat1 / 180;
-            var radlat2 = Math.PI * $rootScope.pos.lat / 180;
-            var theta = lon1 - $rootScope.pos.lng;
+            var radlat2 = Math.PI * $localStorage.pos.lat / 180;
+            var theta = lon1 - $localStorage.pos.lng;
             var radtheta = Math.PI * theta / 180;
             var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
             dist = Math.acos(dist);
@@ -222,8 +192,7 @@ var users = angular.module('users', [
             dist = dist * 60 * 1.1515;
             dist = dist * 1.609344;
             dist = dist.toFixed(0);
-            if (dist > 0) return dist;
-            else return '';
+            return dist;
         }
     }
 })();
@@ -260,9 +229,9 @@ var users = angular.module('users', [
         .module('users')
         .directive('repeatEnd', repeatEnd);
 
-    repeatEnd.inject = ['$timout'];
+    repeatEnd.inject = ['$timout', '$sessionStorage'];
 
-    function repeatEnd($timeout) {
+    function repeatEnd($timeout, $sessionStorage) {
 
         var directive = {
             link: link,
@@ -271,9 +240,10 @@ var users = angular.module('users', [
         return directive;
 
         function link(scope, element, attrs) {
-            if (scope.$last) {
+            if (scope.$last && !$sessionStorage.usersReady) {
                 $timeout(function() {
-                    // alert('users viewd');
+                    alert('Users are shown');
+                    $sessionStorage.usersReady = true;
                 });
             }
         }

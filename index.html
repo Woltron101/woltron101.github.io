@@ -3,13 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Links</title>
+    <title>Works examples</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        img {
+            max-width: 100%;
+        }
+        
+        .row {
+            padding: 15px 0;
+        }
+    </style>
 </head>
 
 <body>
-    <table>
-        <tbody>
-            <tr>
+    <!--<table>
+        <tbody>-->
+    <!--<tr>
                 <td><a href="http://woltron101.github.io/backbone_data-list/">Demo</a></td>
                 <td><a href="https://github.com/Woltron101/Backbone-Data-list/blob/master/specification.pdf">Specification</a></td>
                 <td><a href="https://github.com/Woltron101/Backbone-Data-list">GitHub</a></td>
@@ -19,8 +29,8 @@
                 <td></td>
                 <td></td>
                 <td></td>
-            </tr>
-            <tr>
+            </tr>-->
+    <!--<tr>
                 <td><a href="http://woltron101.github.io/pokemon/">Demo</a></td>
                 <td><a href="https://github.com/Woltron101/pokemonAPI/blob/master/specification.pdf">Specification</a></td>
                 <td><a href="https://github.com/Woltron101/pokemonAPI">GitHub</a></td>
@@ -30,9 +40,93 @@
                 <td><a href="https://github.com/Woltron101/user-profile/blob/master/specification.pdf">Specification</a></td>
                 <td><a href="https://github.com/Woltron101/user-profile">GitHub</a></td>
             </tr>
+            <tr>
+                <td><a href="http://woltron101.github.io/users-list/">Demo</a></td>
+                <td><a href="https://github.com/Woltron101/users-list/blob/master/specification.pdf">Specification</a></td>
+                <td><a href="https://github.com/Woltron101/users-list">GitHub</a></td>
+            </tr>
 
         </tbody>
-    </table>
+    </table>-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="img/1.png" alt="#">
+            </div>
+            <div class="col-md-3">
+                <a href="http://woltron101.github.io/pokemon/">Демо</a> <br>
+                <a href="https://github.com/Woltron101/pokemonAPI/blob/master/specification.pdf">ТЗ</a> <br>
+                <a href="https://github.com/Woltron101/pokemonAPI">GitHub</a>
+            </div>
+            <div class="col-md-6">
+                <h3>Pokemon</h3>
+                <ul>
+                    <li>Использовалось http://pokeapi.co/</li>
+                    <li>При переходе на роут ‘/pokemons’ загружается список покемонов;</li>
+                    <li>Юзер может добавить/удалить в список фаворитов;</li>
+                    <li>Фавориты сохраняются в LocalStorage;</li>
+                    <li>Фильтрация покемонов по типу;</li>
+                    <li>Открывать в модальном окне одного покемона</li>
+                    <li>Для реализации использовался Bootstrap и AngularJS 1.5.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="img/2.png" alt="#">
+            </div>
+            <div class="col-md-3">
+
+                <a href="http://woltron101.github.io/user-profile/">Демо</a> <br>
+                <a href="https://github.com/Woltron101/user-profile/blob/master/specification.pdf">ТЗ</a> <br>
+                <a href="https://github.com/Woltron101/user-profile">GitHub</a>
+            </div>
+            <div class="col-md-6">
+                <h3>User profile</h3>
+                <strong>login - login1</strong>
+                <strong>password - password1</strong>
+                <p>В связи з тем что в задании било требование редактировать данные о пользователе было принято решение использовать Firebase и AngularFire</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="img/3.png" alt="#">
+            </div>
+            <div class="col-md-3">
+                <a href="http://woltron101.github.io/users-list/">Демо</a> <br>
+                <a href="https://github.com/Woltron101/users-list/blob/master/specification.pdf">ТЗ</a> <br>
+                <a href="https://github.com/Woltron101/users-list">GitHub</a>
+            </div>
+            <div class="col-md-6">
+                <h3>Users List</h3>
+                <p>Реализовано приложение для вывода списка существующих пользователей, добавления новых, изменения и удаления существующих, сортировка, фильтрацыя, валидацыя. Средства разработки: AngularJS 1.5, Bootstrap.</p>
+                <!--<strong>Функционал:</strong>
+                <ul>
+                    <li>загрузка пользователей по запросу https://jsonplaceholder.typicode.com/users;</li>
+                    <li>после загрузки пользователей и отрисовки последнего появляеться сообщение, о том, что все пользователи успешно загружены;</li>
+                    <li>поиск пользователей по: ‘name’, ‘username’, ‘email’;</li>
+                    <li>сортировка ‘name’ (по умолчанию), ‘username’, ‘email’, ‘address.street’, ‘company.name’ по алфавиту, с возможностью переключения нисходящей и восходящей;</li>
+                    <li>вместо ‘address.geo’ показывается расстояние от текущего местоположения;</li>
+                    <li>возле поля ‘email’ в списке кнопка по нажатию на которую email скопируется в буфер обмена;</li>
+                    <li>форма добавления пользователя отображается в модальном окне;</li>
+                    <li>все поля кроме ‘id’ доступны для заполнения; ‘id’ сгенерирован при сохранении.</li>
+                </ul>
+                <strong>Валидация полей формы:</strong>
+                <ul>
+                    <li>name – обязательное;</li>
+                    <li>username – обязательное, уникальное;</li>
+                    <li>email – обязательное, уникальное;</li>
+                    <li>phone – составить паттерн под который будут подходить все телефонные номера</li>
+                    <li>существующих юзеров;</li>
+                    <li>website – в формате ‘
+                        <website_name>.
+                            <domain>’;</li>
+                    <li>company.name – обязательное, уникальное.</li>
+                </ul>-->
+            </div>
+        </div>
+
+    </div>
 </body>
 
 </html>

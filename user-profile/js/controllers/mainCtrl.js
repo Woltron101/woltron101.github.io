@@ -6,13 +6,13 @@
         .module('profile')
         .controller('mainController', mainController);
 
-    mainController.inject = ['$sessionStorage', '$state'];
+    mainController.inject = ['$localStorage', '$state'];
 
-    function mainController($sessionStorage, $state) {
+    function mainController($localStorage, $state) {
         var vm = this;
 
         vm.logOut = function() {
-            delete $sessionStorage.user;
+            delete $localStorage.user;
             $state.go('login');
         }
     }

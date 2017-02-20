@@ -6,11 +6,11 @@
         .module('profile')
         .controller('profileController', profileController);
 
-    profileController.inject = ['$sessionStorage'];
+    profileController.inject = ['$localStorage'];
 
-    function profileController($sessionStorage) {
+    function profileController($localStorage) {
         var vm = this;
-        vm.user = $sessionStorage.user
+        vm.user = $localStorage.user
 
 
 
